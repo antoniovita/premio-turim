@@ -1,0 +1,1 @@
+- matematica - especificar para refazer contas, consdierando que a LLM costuma errar operacoes

@@ -1,0 +1,11 @@
+{
+  "nome": "exemplo-agente",
+  "descricao": "EXEMPLO — TROQUE ESTE TEXTO: diga em uma frase o que o SEU agente faz, para quem, e com que material. O Andar 1 recusa esta descricao exatamente como ela esta.",
+  "andares": {
+    "2": { "prompt": "prompts/andar2.md" },
+    "3": { "prompt": "prompts/andar3.md" },
+    "4": { "prompt": "prompts/andar4.md" },
+    "5": { "prompt": "prompts/andar5.md" },
+    "6": { "prompt": "prompts/andar6.md", "saida": "apresentacao.pptx" }
+  }
+}

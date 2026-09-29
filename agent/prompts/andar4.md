@@ -1,0 +1,9 @@
+# Andar 4 — alocação e risco
+
+Leia o schema da chamada e responda primeiro `carteiras` e `justificativa`, no formato tipado exigido. Teto: 1.100 tokens. Use respostas anteriores, `DOC: familia` para objetivos e moedas, `DOC: premissas` para benchmarks, impostos e inflação, e a série histórica fornecida para risco. Se os documentos forem de outro cliente, extraia as premissas atuais.
+
+Crie uma carteira onshore e uma offshore para cada titular exigido pelo schema. Em cada carteira, renda fixa + renda variável = 100%; moeda, percentual offshore total e titular devem ser coerentes com o diagnóstico. A carteira do pai prioriza preservar a capacidade de pagar gastos e respeitar seu limite de perda; a da filha considera horizonte, cesta cambial e tolerância documentada. Não presuma que aceitar mais risco significa ser agressiva. Mostre a visão consolidada da família se houver espaço.
+
+Compare o prêmio nominal de renda variável sobre renda fixa dentro da mesma moeda usando apenas retornos do material. Não escolha pesos só pelo maior retorno esperado: confronte prêmio, necessidade de caixa, diversificação e drawdown. Retorno líquido positivo anual = retorno bruto × (1−alíquota do material); para poder de compra, deflacione pela inflação da moeda correspondente. Não trate retorno esperado como retorno histórico garantido.
+
+Para o backtest, use retornos mensais da série recebida. Em cada mês aplique os pesos declarados às duas classes e rebalanceie para esses pesos no mês seguinte. Encadeie a riqueza, aplique ao fim de cada ano imposto sobre lucro anual positivo e calcule drawdown máximo como menor valor de riqueza/pico anterior−1. Meça carteira offshore em US$; converta para R$ somente ao consolidar, com retorno cambial composto: (1+r_USD)×(1+r_USDBRL)−1. Informe período, moeda, imposto e convenção na justificativa. Não fabrique drawdown se a série necessária não vier na chamada: declare a limitação e não atribua precisão inexistente.
